@@ -1,0 +1,9 @@
+/*Global style file can be added to this file and also import other style files*/
+/*style class for header*/
+.header{
+    background-color: #04192E;
+    display: block;
+    padding: 3%;
+    color: white;
+    font-size: 25px;
+}
