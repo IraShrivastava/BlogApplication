@@ -37,7 +37,7 @@ export class BlogViewComponent implements OnInit, OnDestroy {
         this.currentBlog = data["data"];
       },
       error => {
-        console.log("soome error occured");
+        console.log("some error occured");
         console.log(error.errorMessage);
       }
     )
