@@ -16,9 +16,11 @@ import { BlogHttpService } from "../blog-http.service"
 export class HomeComponent implements OnInit, OnDestroy {
 
 
-  public allBlogs = [];
+  //public allBlogs = [];
 
-  constructor(public blogHttpService: BlogHttpService) {
+  public allBlogs: any;
+
+  constructor(public blogHttpService: BlogHttpService, public blogService: BlogService) {
     console.log("home component constructor called");
   }
 
@@ -36,6 +38,23 @@ export class HomeComponent implements OnInit, OnDestroy {
       }
     )
     console.log(this.allBlogs);
+//
+    // this.allBlogs = this.blogService.getAllBlogs().subscribe(
+    //   data => {
+    //     console.log("length")
+    //     /* console.log(this.allBlogs.length) */
+    //     console.log(data);
+    //     this.allBlogs = data;
+    //     console.log("length")
+    //     console.log(this.allBlogs.length)
+    //   },
+    //   error => {
+    //     console.log("some error occured");
+    //     console.log(error.errorMessage)
+    //   }
+    // )
+    // console.log(this.allBlogs);
+//
 
   }
 

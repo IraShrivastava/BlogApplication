@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-
+//
+import { Observable, of } from 'rxjs';
 @Injectable()
 export class BlogService {
 
@@ -55,8 +56,9 @@ export class BlogService {
   }
 
   //method to return all the blogs
-  public getAllBlogs(): any {
-    return this.allBlogs;
+  public getAllBlogs(): Observable<any> {
+    /* console.log(typeof(this.allBlogs)) */
+    return of(this.allBlogs);
   }
 
   //method to get particular blog

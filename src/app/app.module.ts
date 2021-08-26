@@ -14,7 +14,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 //import the services used in application
 import { BlogService } from './blog.service';
 import { BlogHttpService } from './blog-http.service';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 //importing toastr module
 import { ToastrModule } from 'ngx-toastr'
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations'

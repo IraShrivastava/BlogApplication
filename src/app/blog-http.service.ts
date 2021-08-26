@@ -14,8 +14,10 @@ export class BlogHttpService {
   public allBlogs;
   public currentBlog;
   //variable to store backend base url, and authtoken
-  public baseUrl = 'https://blogapp.edwisor.com/api/v1/blogs';
-  public authToken ="ZGJkMTVhOWQyMTJkOGUzMWI0ZmQzMDJjZmE3YmYwNDljNjNkZmVkM2U2ODkyZjZjZTVlYmRlYThmODY1NTAyNmM2NDMwYzVmMjBkM2RhYWFkNTU0NjMwOTM5YWU2OTRkMmUyOGI5NDk0YmNiYzJiZDJhMjRkMWRiNThjM2ExZWVjMA=="
+  //public baseUrl = 'https://blogapp.edwisor.com/api/v1/blogs';
+  public baseUrl = 'http://localhost:3000/api/v1/blogs'
+  //public authToken ="ZGJkMTVhOWQyMTJkOGUzMWI0ZmQzMDJjZmE3YmYwNDljNjNkZmVkM2U2ODkyZjZjZTVlYmRlYThmODY1NTAyNmM2NDMwYzVmMjBkM2RhYWFkNTU0NjMwOTM5YWU2OTRkMmUyOGI5NDk0YmNiYzJiZDJhMjRkMWRiNThjM2ExZWVjMA=="
+  public authToken = "Admin"
   constructor(private _http:HttpClient) {
 
     console.log("blog-http service called");
